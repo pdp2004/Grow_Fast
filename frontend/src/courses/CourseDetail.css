@@ -1,0 +1,559 @@
+.course-detail-page {
+    min-height: 100vh;
+  }
+  
+  .course-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 3rem 0;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .course-header-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 1rem;
+    color: #94a3b8;
+  }
+  
+  .breadcrumb a {
+    color: #667eea;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .course-header h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .course-subtitle {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .course-meta-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #e2e8f0;
+  }
+  
+  .meta-icon {
+    font-size: 1.25rem;
+  }
+  
+  .course-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .tag {
+    background: #334155;
+    color: #e2e8f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+  }
+  
+  /* Sidebar */
+  .course-sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+  
+  .enrollment-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-thumbnail-large {
+    height: 200px;
+    background: #0f172a;
+  }
+  
+  .course-thumbnail-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbnail-placeholder-large {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+  }
+  
+  .thumbnail-placeholder-large .thumbnail-icon {
+    font-size: 4rem;
+    opacity: 0.8;
+  }
+  
+  .pricing {
+    padding: 1.5rem;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .price-free .price-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #10b981;
+  }
+  
+  .price-paid .price-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .enrollment-status {
+    padding: 1.5rem;
+  }
+  
+  .progress-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background: #334155;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    color: #10b981;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  
+  .enroll-btn {
+    margin: 1.5rem;
+  }
+  
+  .course-features {
+    padding: 1.5rem;
+    border-top: 1px solid #334155;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    color: #e2e8f0;
+  }
+  
+  .feature:not(:last-child) {
+    border-bottom: 1px solid #334155;
+  }
+  
+  .feature-icon {
+    font-size: 1.25rem;
+  }
+  
+  /* Course Content */
+  .course-content {
+    padding: 3rem 0;
+  }
+  
+  .course-tabs {
+    display: flex;
+    border-bottom: 2px solid #334155;
+    margin-bottom: 2rem;
+  }
+  
+  .tab {
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    color: #94a3b8;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .tab:hover {
+    color: #e2e8f0;
+  }
+  
+  .tab.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+  }
+  
+  /* Overview Tab */
+  .overview-content {
+    max-width: 800px;
+  }
+  
+  .overview-section {
+    margin-bottom: 3rem;
+  }
+  
+  .overview-section h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .overview-section p {
+    color: #94a3b8;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  
+  .what-you-learn {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  
+  .what-you-learn h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .learn-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .learn-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #e2e8f0;
+  }
+  
+  .check-icon {
+    color: #10b981;
+    flex-shrink: 0;
+  }
+  
+  .requirements-section {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  
+  .requirements-section h4 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .requirements-section ul {
+    color: #94a3b8;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+  }
+  
+  .requirements-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Curriculum Tab */
+  .curriculum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .curriculum-header h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .curriculum-stats {
+    color: #94a3b8;
+  }
+  
+  .tutorials-list {
+    border: 1px solid #334155;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .tutorial-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #334155;
+    background: #1e293b;
+    transition: background 0.3s ease;
+  }
+  
+  .tutorial-item:hover {
+    background: #0f172a;
+  }
+  
+  .tutorial-item:last-child {
+    border-bottom: none;
+  }
+  
+  .tutorial-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .tutorial-number {
+    width: 32px;
+    height: 32px;
+    background: #334155;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .tutorial-details h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+  
+  .tutorial-details p {
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .tutorial-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .duration {
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  .free-badge {
+    background: #065f46;
+    color: #6ee7b7;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .tutorial-actions {
+    flex-shrink: 0;
+  }
+  
+  .btn-completed {
+    background: #065f46;
+    color: #6ee7b7;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .preview-text {
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  /* Reviews Tab */
+  .reviews-header {
+    margin-bottom: 2rem;
+  }
+  
+  .reviews-header h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .rating-overview {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  
+  .average-rating {
+    text-align: center;
+  }
+  
+  .rating-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating-stars {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating-count {
+    color: #94a3b8;
+  }
+  
+  /* .reviews-list {
+    space-y: 1.5rem;
+  } */
+  
+  .review-item {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .reviewer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .reviewer-avatar {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .reviewer-name {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .review-date {
+    color: #94a3b8;
+    font-size: 0.875rem;
+  }
+  
+  .review-rating {
+    color: #fbbf24;
+  }
+  
+  .review-content {
+    color: #e2e8f0;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .course-header-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .course-sidebar {
+      position: static;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course-header h1 {
+      font-size: 2rem;
+    }
+  
+    .course-meta-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .course-tabs {
+      flex-wrap: wrap;
+    }
+  
+    .tab {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+    }
+  
+    .learn-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .tutorial-item {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+  
+    .tutorial-actions {
+      align-self: flex-end;
+    }
+  }
