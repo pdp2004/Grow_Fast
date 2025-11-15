@@ -1,6 +1,6 @@
 /* ===== Navbar Container ===== */
 .navbar {
-  background: linear-gradient(90deg, #1e293b, #334155);
+  background: whitesmoke;
   color: #fff;
   padding: 15px 0;
   position: sticky;
@@ -29,13 +29,13 @@
   font-size: 1.7rem;
   font-weight: 700;
   text-decoration: none;
-  color: #38bdf8;
+  color:black;
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
 
 .logo:hover {
-  color: #22d3ee;
+  color: red;
 }
 
 /* ===== Navigation Links ===== */
@@ -46,7 +46,7 @@
 }
 
 .nav-links a {
-  color: #e2e8f0;
+  color:black;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -54,7 +54,7 @@
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: red;
 }
 
 /* ===== Buttons ===== */
@@ -106,7 +106,7 @@
 .menu-toggle span {
   height: 3px;
   width: 100%;
-  background: #f8fafc;
+  background: black;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
