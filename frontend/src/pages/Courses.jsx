@@ -204,9 +204,8 @@ const Courses = () => {
               </div>
 
               <div className="course-body">
-                <h3>{course.title}</h3>
-                <p>{course.description}</p>
-                <p className="course-category">📚 {course.category}</p>
+                <h3>{course.title.substring(0, 35)}</h3>
+                <p>{course.description.substring(0, 70)}</p>
 
                 {/* ✅ Role-based Actions */}
                 {role === "admin" ? (

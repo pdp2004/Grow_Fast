@@ -8,7 +8,7 @@
   padding: 25px;
   font-family: "Poppins", sans-serif;
   color: #2c3e50;
-  background: linear-gradient(135deg, #f4f9ff, #ffffff);
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
   border-radius: 16px;
   animation: fadeIn 1s ease;
 }
@@ -193,7 +193,7 @@
 
 .course-img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
